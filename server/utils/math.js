@@ -23,5 +23,14 @@ const subtract = (num1, num2) => {
   return num;
 };
 
+const multiply = (num1, num2) => {
+  let num = num1 * num2;
+
+  num = clamp(num);
+
+  return num;
+};
+
 module.exports.add = add;
 module.exports.sub = subtract;
+module.exports.mult = multiply;
